@@ -1,0 +1,9 @@
+profile: demo
+tenancy: single
+read_only_default: true
+evidence_required: true
+network:
+  offline_first: false
+budgets:
+  max_context_tokens: 24000
+  max_export_size_mb: 10

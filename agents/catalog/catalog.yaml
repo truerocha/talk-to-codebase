@@ -1,0 +1,25 @@
+version: 0.1.0
+description: TTC agent catalog (WAF + custom)
+default_profile: demo
+
+waf:
+  - id: waf.operational_excellence
+    pillar: operational_excellence
+    entrypoint: agents/waf/operational_excellence/agent.yaml
+  - id: waf.security
+    pillar: security
+    entrypoint: agents/waf/security/agent.yaml
+  - id: waf.reliability
+    pillar: reliability
+    entrypoint: agents/waf/reliability/agent.yaml
+  - id: waf.performance_efficiency
+    pillar: performance_efficiency
+    entrypoint: agents/waf/performance_efficiency/agent.yaml
+  - id: waf.cost_optimization
+    pillar: cost_optimization
+    entrypoint: agents/waf/cost_optimization/agent.yaml
+  - id: waf.sustainability
+    pillar: sustainability
+    entrypoint: agents/waf/sustainability/agent.yaml
+
+custom: []

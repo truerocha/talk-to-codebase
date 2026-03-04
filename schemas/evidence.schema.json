@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceRef",
+  "type": "object",
+  "required": [
+    "path",
+    "range",
+    "snapshot_id"
+  ],
+  "properties": {
+    "path": {
+      "type": "string"
+    },
+    "range": {
+      "type": "object",
+      "required": [
+        "start_line",
+        "end_line"
+      ],
+      "properties": {
+        "start_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_line": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "repo_id": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": "string"
+    }
+  }
+}

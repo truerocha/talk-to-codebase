@@ -1,0 +1,10 @@
+id: waf.performance_efficiency
+name: WAF Performance Efficiency
+version: 0.1.0
+description: WAF analysis agent for performance efficiency. Produces findings with evidence references.
+inputs:
+  - snapshot_id
+outputs:
+  - findings
+contracts:
+  finding_schema: schemas/finding.schema.json

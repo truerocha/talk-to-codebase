@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExportArtifact",
+  "type": "object",
+  "required": [
+    "export_id",
+    "run_id",
+    "format",
+    "status"
+  ],
+  "properties": {
+    "export_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "markdown",
+        "json"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "ready",
+        "failed"
+      ]
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+id: waf.operational_excellence
+name: WAF Operational Excellence
+version: 0.1.0
+description: WAF analysis agent for operational excellence. Produces findings with evidence references.
+inputs:
+  - snapshot_id
+outputs:
+  - findings
+contracts:
+  finding_schema: schemas/finding.schema.json

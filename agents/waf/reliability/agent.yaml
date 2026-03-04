@@ -1,0 +1,10 @@
+id: waf.reliability
+name: WAF Reliability
+version: 0.1.0
+description: WAF analysis agent for reliability. Produces findings with evidence references.
+inputs:
+  - snapshot_id
+outputs:
+  - findings
+contracts:
+  finding_schema: schemas/finding.schema.json

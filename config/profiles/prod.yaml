@@ -1,0 +1,13 @@
+profile: prod
+tenancy: multi
+read_only_default: true
+evidence_required: true
+network:
+  offline_first: true
+  vpc_only: true
+  deny_public_egress: true
+budgets:
+  max_context_tokens: 24000
+  max_export_size_mb: 10
+rate_limits:
+  per_tenant_rps: 5

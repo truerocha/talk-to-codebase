@@ -1,0 +1,10 @@
+id: waf.sustainability
+name: WAF Sustainability
+version: 0.1.0
+description: WAF analysis agent for sustainability. Produces findings with evidence references.
+inputs:
+  - snapshot_id
+outputs:
+  - findings
+contracts:
+  finding_schema: schemas/finding.schema.json

@@ -1,0 +1,19 @@
+# Local-only artifacts (must not be committed)
+var/
+*.log
+*.env
+*.secret
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
